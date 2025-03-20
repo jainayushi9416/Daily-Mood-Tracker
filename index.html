@@ -6,14 +6,16 @@
     <title>Mood Tracker</title>
 </head>
 <script src="script.js"></script>
-<script></script>
+
 <body>
-    <h1>Daily Mood Tracker</h1>
-        <li onclick="saveMood('Happy')">Happy :&#128512;</li>
-        <li onclick="saveMood('Neutral')">Neutral:&#128528;</li>
-        <li onclick="saveMood('Sad')">Sad: &#128543;</li>
-        <li onclick="saveMood('Angry')">Angry &#128544;</li>
+    <h1>Mood Tracker</h1>
+    <ul>
+        <li onclick="saveMood(this)">Happy &#128512;</li>
+        <li onclick="saveMood(this)">Neutral &#128528;</li>
+        <li onclick="saveMood(this)">Sad &#128543;</li>
+        <li onclick="saveMood(this)">Angry &#128544;</li>
     </ul>
+    <div id="todayMood"></div>
     <button onclick="displayData()">Daily</button>
     <button>Weekly</button>
     <button>Monthly</button>
